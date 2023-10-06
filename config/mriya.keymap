@@ -25,8 +25,13 @@
     combos {
         compatible = "zmk,combos";
 
-        Escape {
-            bindings = <&kp ESCAPE>;
+        vind {
+            bindings = <&kp RG(S)>;
+            key-positions = <52 43>;
+        };
+
+        firefox {
+            bindings = <&kp LC(LA(LS(NUMBER_1)))>;
             key-positions = <14 15>;
         };
     };
@@ -56,7 +61,7 @@
 
         raise_layer {
             bindings = <
-        &trans           &trans           &trans             &trans                &trans             &trans         &trans        &trans        &trans        &trans         &trans           &trans
+        &trans           &trans           &trans             &trans                &trans             &trans         &trans        &trans        &trans        &trans         &trans           &kp BACKSPACE
 &trans  &kp KP_NUM       &kp LC(MINUS)    &kp LC(LA(MINUS))  &kp LS(LC(UP_ARROW))  &kp PAGE_UP        &kp HOME       &kp C_VOL_UP  &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT)  &kp SLCK         &kp CAPS         &trans
         &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp LS(LC(LEFT))   &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp RG(END)    &kp C_MUTE    &kp LEFT      &kp DOWN      &kp RIGHT      &kp INS          &mt RCTRL K_APP
         &trans           &kp KP_N0        &kp KP_N1          &kp KP_N2             &kp PAGE_DOWN      &kp KP_DOT     &kp C_VOL_DN  &kp END       &kp DOWN      &kp PG_DN      &kp PAUSE_BREAK  &trans
