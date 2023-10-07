@@ -55,7 +55,12 @@
         LangSwitch: LangSwitch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LEFT_ALT>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp LEFT_SHIFT>;
+
             label = "LANGSWITCH";
         };
     };
@@ -65,28 +70,28 @@
 
         default_layer {
             bindings = <
-&kp LWIN  &kp TILDE               &kp Q  &kp W       &kp E      &kp R                 &kp T          &kp Y      &kp U                      &kp I      &kp O     &kp P     &kp LBKT        &kp RBKT
-          &kp LCTRL               &kp A  &kp S       &kp D      &kp F                 &kp G          &kp H      &kp J                      &kp K      &kp L     &kp SEMI  &mt RCTRL SQT
-          &mt LEFT_ALT BACKSLASH  &kp Z  &kp X       &kp C      &kp V                 &kp B          &kp N      &kp M                      &kp COMMA  &kp DOT   &kp FSLH  &mt RALT MINUS
-                                         &kp ESCAPE  &lt 2 TAB  &mt LEFT_SHIFT SPACE  &lt 1 ENTER    &kp SPACE  &mt RIGHT_SHIFT BACKSPACE  &lt 2 DEL  &kp PIPE
+&kp LWIN  &kp TILDE               &kp Q  &kp W       &kp E      &kp R       &kp T          &kp Y      &kp U                      &kp I      &kp O     &kp P     &kp LBKT        &kp RBKT
+          &kp LCTRL               &kp A  &kp S       &kp D      &kp F       &kp G          &kp H      &kp J                      &kp K      &kp L     &kp SEMI  &mt RCTRL SQT
+          &mt LEFT_ALT BACKSLASH  &kp Z  &kp X       &kp C      &kp V       &kp B          &kp N      &kp M                      &kp COMMA  &kp DOT   &kp FSLH  &mt RALT MINUS
+                                         &kp ESCAPE  &lt 2 TAB  &kp LSHIFT  &lt 1 ENTER    &kp SPACE  &mt RIGHT_SHIFT BACKSPACE  &lt 2 DEL  &kp PIPE
             >;
         };
 
         lower_layer {
             bindings = <
-&trans  &kp LEFT_WIN  &kp F1  &kp F2      &kp F3     &kp F4                &kp CAPSLOCK    &kp EXCLAMATION   &kp AT_SIGN                &kp HASH   &kp DOLLAR  &kp PERCENT  &kp RIGHT_GUI  &mt RGUI F12
-        &kp LCTRL     &kp F5  &kp F6      &kp F7     &kp F8                &kp C_MENU      &kp CARET         &kp AMPS                   &kp STAR   &kp LPAR    &kp RPAR     &kp RCTRL
-        &kp LEFT_ALT  &kp F9  &kp F10     &kp F11    &kp F12               &LangSwitch     &kp GREATER_THAN  &kp LESS_THAN              &kp MINUS  &kp PLUS    &kp EQUAL    &kp RIGHT_ALT
-                              &kp ESCAPE  &lt 2 TAB  &mt LEFT_SHIFT SPACE  &trans          &kp SPACE         &mt RIGHT_SHIFT BACKSPACE  &lt 3 DEL  &kp PIPE
+&trans  &kp LEFT_WIN  &kp F1  &kp F2      &kp F3     &kp F4          &kp CAPSLOCK    &kp EXCLAMATION   &kp AT_SIGN                &kp HASH   &kp DOLLAR  &kp PERCENT  &kp RIGHT_GUI  &mt RGUI F12
+        &kp LCTRL     &kp F5  &kp F6      &kp F7     &kp F8          &kp C_MENU      &kp CARET         &kp AMPS                   &kp STAR   &kp LPAR    &kp RPAR     &kp RCTRL
+        &kp LEFT_ALT  &kp F9  &kp F10     &kp F11    &kp F12         &LangSwitch     &kp GREATER_THAN  &kp LESS_THAN              &kp MINUS  &kp PLUS    &kp EQUAL    &kp RIGHT_ALT
+                              &kp ESCAPE  &lt 2 TAB  &kp LEFT_SHIFT  &trans          &kp SPACE         &mt RIGHT_SHIFT BACKSPACE  &lt 3 DEL  &kp PIPE
             >;
         };
 
         raise_layer {
             bindings = <
-&trans  &kp LEFT_WIN        &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9          &kp PLUS      &kp LS(UP_ARROW)  &kp HOME                   &kp PSCRN     &kp PG_UP  &kp C_VOL_UP       &kp LEFT_GUI   &trans
-        &kp LCTRL           &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp MINUS     &kp LEFT          &kp DOWN                   &kp UP        &kp RIGHT  &kp C_VOLUME_DOWN  &kp RCTRL
-        &mt LEFT_ALT EQUAL  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp PERIOD    &kp LS(DOWN)      &kp END                    &kp DOWN      &kp PG_DN  &kp K_MUTE         &kp RIGHT_ALT
-                                          &trans        &trans        &mt LEFT_SHIFT SPACE  &lt 3 RET     &kp SPACE         &mt RIGHT_SHIFT BACKSPACE  &lt 3 DELETE  &kp PIPE
+&trans  &kp LEFT_WIN        &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp LS(UP_ARROW)  &kp HOME                   &kp PSCRN     &kp PG_UP  &kp C_VOL_UP       &kp LEFT_GUI   &trans
+        &kp LCTRL           &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp LEFT          &kp DOWN                   &kp UP        &kp RIGHT  &kp C_VOLUME_DOWN  &kp RCTRL
+        &mt LEFT_ALT EQUAL  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp LS(DOWN)      &kp END                    &kp DOWN      &kp PG_DN  &kp K_MUTE         &kp RIGHT_ALT
+                                          &trans        &trans        &kp LSHIFT    &lt 3 RET     &kp SPACE         &mt RIGHT_SHIFT BACKSPACE  &lt 3 DELETE  &kp PIPE
             >;
         };
 
