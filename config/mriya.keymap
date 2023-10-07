@@ -26,7 +26,7 @@
         compatible = "zmk,combos";
 
         Delete {
-            bindings = <&kp LC(LS(DELETE))>;
+            bindings = <&kp DELETE>;
             key-positions = <5 6>;
         };
 
@@ -88,9 +88,9 @@
 
         raise_layer {
             bindings = <
-&trans  &kp LEFT_WIN        &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp LS(UP_ARROW)  &kp HOME                   &kp PSCRN     &kp PG_UP  &kp C_VOL_UP       &kp LEFT_GUI   &trans
-        &kp LCTRL           &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp LEFT          &kp DOWN                   &kp UP        &kp RIGHT  &kp C_VOLUME_DOWN  &kp RCTRL
-        &mt LEFT_ALT EQUAL  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp LS(DOWN)      &kp END                    &kp DOWN      &kp PG_DN  &kp K_MUTE         &kp RIGHT_ALT
+&trans  &kp LEFT_WIN        &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp LS(UP_ARROW)  &kp HOME                   &kp UP_ARROW  &kp PG_UP  &kp C_VOL_UP       &kp LEFT_GUI   &trans
+        &kp LCTRL           &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &trans            &kp LEFT                   &kp DOWN      &kp RIGHT  &kp C_VOLUME_DOWN  &kp RCTRL
+        &mt LEFT_ALT EQUAL  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp LS(DOWN)      &kp END                    &trans        &kp PG_DN  &kp K_MUTE         &kp RIGHT_ALT
                                           &trans        &trans        &kp LSHIFT    &lt 3 RET     &kp SPACE         &mt RIGHT_SHIFT BACKSPACE  &lt 3 DELETE  &kp PIPE
             >;
         };
