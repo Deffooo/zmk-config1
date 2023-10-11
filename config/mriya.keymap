@@ -25,21 +25,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Delete {
-            bindings = <&kp DELETE>;
-            key-positions = <5 6>;
-        };
-
-        WIN {
-            bindings = <&kp LG(S)>;
-            key-positions = <18 19>;
-        };
-
-        Firefox {
-            bindings = <&kp LC(LA(LS(NUMBER_1)))>;
-            key-positions = <30 31>;
-        };
-
         Excel- {
             bindings = <&kp LC(MINUS)>;
             key-positions = <2 3>;
@@ -70,7 +55,7 @@
 
         default_layer {
             bindings = <
-&kp LWIN  &kp TILDE               &kp Q  &kp W       &kp E      &kp R       &kp T          &kp Y      &kp U                      &kp I      &kp O     &kp P     &kp LBKT        &kp RBKT
+&kp LWIN  &lt 4 TILDE             &kp Q  &kp W       &kp E      &kp R       &kp T          &kp Y      &kp U                      &kp I      &kp O     &kp P     &kp LBKT        &kp RBKT
           &kp LCTRL               &kp A  &kp S       &kp D      &kp F       &kp G          &kp H      &kp J                      &kp K      &kp L     &kp SEMI  &mt RCTRL SQT
           &mt LEFT_ALT BACKSLASH  &kp Z  &kp X       &kp C      &kp V       &kp B          &kp N      &kp M                      &kp COMMA  &kp DOT   &kp FSLH  &mt RALT MINUS
                                          &kp ESCAPE  &lt 2 TAB  &kp LSHIFT  &lt 1 ENTER    &kp SPACE  &mt RIGHT_SHIFT BACKSPACE  &lt 2 DEL  &kp PIPE
@@ -88,10 +73,10 @@
 
         raise_layer {
             bindings = <
-&trans  &kp LEFT_WIN        &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp LS(UP_ARROW)  &kp HOME                   &kp UP_ARROW  &kp PG_UP  &kp C_VOL_UP       &kp LEFT_GUI   &trans
-        &kp LCTRL           &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &trans            &kp LEFT                   &kp DOWN      &kp RIGHT  &kp C_VOLUME_DOWN  &kp RCTRL
-        &mt LEFT_ALT EQUAL  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp LS(DOWN)      &kp END                    &trans        &kp PG_DN  &kp K_MUTE         &kp RIGHT_ALT
-                                          &trans        &trans        &kp LSHIFT    &lt 3 RET     &kp SPACE         &mt RIGHT_SHIFT BACKSPACE  &lt 3 DELETE  &kp PIPE
+&trans  &kp LEFT_WIN        &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp LS(UP_ARROW)  &kp HOME                   &kp UP_ARROW  &kp PG_UP  &kp C_VOL_UP       &kp LEFT_GUI   &trans
+        &kp LCTRL           &kp KP_DIVIDE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &trans            &kp LEFT                   &kp DOWN      &kp RIGHT  &kp C_VOLUME_DOWN  &kp RCTRL
+        &mt LEFT_ALT EQUAL  &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp LS(DOWN)      &kp END                    &trans        &kp PG_DN  &kp K_MUTE         &kp RIGHT_ALT
+                                           &trans        &trans        &kp LSHIFT    &lt 3 RET     &kp SPACE         &mt RIGHT_SHIFT BACKSPACE  &lt 3 DELETE  &kp PIPE
             >;
         };
 
@@ -101,6 +86,15 @@
        &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
        &sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
                                   &none         &trans        &none         &trans          &trans        &none         &trans        &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &kp LG(V)         &kp LS(LC(UP_ARROW))  &kp PAGE_UP               &kp DEL      &trans  &trans    &kp UP_ARROW  &trans     &trans  &trans  &trans
+        &trans  &trans  &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))         &kp LG(S)    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
+        &trans  &trans  &trans            &trans                &kp PAGE_DOWN             &trans       &trans  &trans    &trans        &trans     &trans  &trans
+                        &trans            &trans                &kp LS(LC(LA(NUMBER_1)))  &trans       &trans  &trans    &trans        &trans
             >;
         };
     };
