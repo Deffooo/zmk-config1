@@ -59,6 +59,11 @@
             bindings = <&kp LG(V)>;
             key-positions = <29 30 31>;
         };
+
+        calc {
+            bindings = <&kp LA(K_CALCULATOR)>;
+            key-positions = <7 8 9>;
+        };
     };
 
     macros {
