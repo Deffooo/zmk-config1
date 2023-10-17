@@ -31,7 +31,7 @@
         };
 
         MinusGoogle {
-            bindings = <&kp LC(LA(MINUS))>;
+            bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
         };
 
@@ -61,8 +61,13 @@
         };
 
         calc {
-            bindings = <&kp LA(K_CALCULATOR)>;
+            bindings = <&kp K_CALC>;
             key-positions = <7 8 9>;
+        };
+
+        sleep {
+            bindings = <&kp K_SLEEP>;
+            key-positions = <21 22 23 24>;
         };
     };
 
@@ -85,10 +90,10 @@
 
         default_layer {
             bindings = <
-&kp LWIN  &lt 4 TILDE             &kp Q  &kp W       &kp E      &kp R       &kp T          &kp Y      &kp U                      &kp I      &kp O     &kp P     &kp LBKT        &kp RBKT
+&kp LWIN  &kp TILDE               &kp Q  &kp W       &kp E      &kp R       &kp T          &kp Y      &kp U                      &kp I      &kp O     &kp P     &kp LBKT        &kp RBKT
           &kp LCTRL               &kp A  &kp S       &kp D      &kp F       &kp G          &kp H      &kp J                      &kp K      &kp L     &kp SEMI  &mt RCTRL SQT
           &mt LEFT_ALT BACKSLASH  &kp Z  &kp X       &kp C      &kp V       &kp B          &kp N      &kp M                      &kp COMMA  &kp DOT   &kp FSLH  &mt RALT MINUS
-                                         &kp ESCAPE  &lt 2 TAB  &kp LSHIFT  &lt 1 ENTER    &kp SPACE  &mt RIGHT_SHIFT BACKSPACE  &lt 2 DEL  &kp PIPE
+                                         &kp DELETE  &lt 2 TAB  &kp LSHIFT  &lt 1 ENTER    &kp SPACE  &mt RIGHT_SHIFT BACKSPACE  &lt 2 DEL  &kp PIPE
             >;
         };
 
