@@ -85,6 +85,16 @@
         };
     };
 
+    behaviors {
+        TapDe: TapDe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LS(RIGHT_BRACKET)>, <&kp BACKSLASH>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
