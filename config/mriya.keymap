@@ -27,12 +27,27 @@
 
         vind {
             bindings = <&kp RG(S)>;
-            key-positions = <52 43>;
+            key-positions = <28 29 30>;
         };
 
         firefox {
             bindings = <&kp LC(LA(LS(NUMBER_1)))>;
-            key-positions = <14 15>;
+            key-positions = <29 30 31>;
+        };
+
+        Bufer {
+            bindings = <&kp LG(V)>;
+            key-positions = <41 42 43>;
+        };
+
+        DeleteExcel {
+            bindings = <&kp LC(MINUS)>;
+            key-positions = <1 2>;
+        };
+
+        DeleteGoogle {
+            bindings = <&kp LC(LA(MINUS))>;
+            key-positions = <0 1>;
         };
     };
 
@@ -51,11 +66,11 @@
 
         raise_layer {
             bindings = <
-        &trans           &trans           &trans             &trans                &trans             &trans         &trans        &trans        &trans        &trans         &trans           &kp BACKSPACE
-&trans  &kp KP_NUM       &kp LC(MINUS)    &kp LC(LA(MINUS))  &kp LS(LC(UP_ARROW))  &kp PAGE_UP        &kp HOME       &kp C_VOL_UP  &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT)  &kp SLCK         &kp CAPS         &kp K_SLEEP
-        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp LS(LC(LEFT))   &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp RG(END)    &kp C_MUTE    &kp LEFT      &kp DOWN      &kp RIGHT      &kp INS          &mt RCTRL K_APP
-        &trans           &kp KP_N0        &kp KP_N1          &kp KP_N2             &kp PAGE_DOWN      &kp KP_DOT     &kp C_VOL_DN  &kp END       &kp DOWN      &kp PG_DN      &kp PAUSE_BREAK  &trans
-                                          &trans             &trans                &trans             &lt 3 RET      &lt 3 ESC     &trans        &trans        &trans
+        &trans           &trans           &trans             &trans                &trans             &trans        &trans        &trans        &trans        &trans         &trans           &kp BACKSPACE
+&trans  &kp KP_NUM       &kp LC(MINUS)    &kp LC(LA(MINUS))  &kp LS(LC(UP_ARROW))  &kp PAGE_UP        &kp HOME      &kp C_VOL_UP  &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT)  &kp SLCK         &kp CAPS         &kp K_SLEEP
+        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp LS(LC(LEFT))   &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp END       &kp C_MUTE    &kp LEFT      &kp DOWN      &kp RIGHT      &kp INS          &mt RCTRL K_APP
+        &trans           &kp KP_N0        &kp KP_N1          &kp KP_N2             &kp PAGE_DOWN      &kp KP_DOT    &kp C_VOL_DN  &kp END       &kp DOWN      &kp PG_DN      &kp PAUSE_BREAK  &trans
+                                          &trans             &trans                &trans             &lt 3 RET     &lt 3 ESC     &trans        &trans        &trans
             >;
         };
 
