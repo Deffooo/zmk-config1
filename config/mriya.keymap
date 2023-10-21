@@ -118,10 +118,10 @@
 
         raise_layer {
             bindings = <
-&trans  &kp LEFT_WIN        &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp LS(UP_ARROW)  &kp HOME                   &kp UP_ARROW  &kp PG_UP  &kp C_VOL_UP       &kp LEFT_GUI   &trans
-        &kp LCTRL           &kp KP_DIVIDE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &trans            &kp LEFT                   &kp DOWN      &kp RIGHT  &kp C_VOLUME_DOWN  &kp RCTRL
-        &mt LEFT_ALT EQUAL  &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp LS(DOWN)      &kp END                    &trans        &kp PG_DN  &kp C_MUTE         &kp RIGHT_ALT
-                                           &trans        &trans        &kp LSHIFT    &lt 3 RET     &kp SPACE         &mt RIGHT_SHIFT BACKSPACE  &lt 3 DELETE  &kp PIPE
+&trans  &kp LEFT_WIN        &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS     &kp LS(UP_ARROW)  &kp HOME                   &kp UP_ARROW  &kp PG_UP  &kp C_VOL_UP       &kp LEFT_GUI   &trans
+        &kp LCTRL           &kp KP_DIVIDE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS    &trans            &kp LEFT                   &kp DOWN      &kp RIGHT  &kp C_VOLUME_DOWN  &kp RCTRL
+        &mt LEFT_ALT EQUAL  &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT      &kp LS(DOWN)      &kp END                    &trans        &kp PG_DN  &kp C_MUTE         &kp RIGHT_ALT
+                                           &trans        &trans        &kp LSHIFT    &lt 3 RET    &kp SPACE         &mt RIGHT_SHIFT BACKSPACE  &lt 3 DELETE  &kp PIPE
             >;
         };
 
