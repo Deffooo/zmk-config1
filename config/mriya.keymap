@@ -49,6 +49,11 @@
             bindings = <&kp LC(LA(MINUS))>;
             key-positions = <0 1>;
         };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <4 18>;
+        };
     };
 
     keymap {
