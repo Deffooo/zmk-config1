@@ -52,7 +52,7 @@
 
         Delete {
             bindings = <&kp DELETE>;
-            key-positions = <4 18>;
+            key-positions = <17 31>;
         };
     };
 
