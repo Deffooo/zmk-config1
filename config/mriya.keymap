@@ -76,11 +76,11 @@
 
         lower_layer {
             bindings = <
-        &kp TILDE           &kp N1        &kp N2        &kp N3        &kp N4          &kp N5         &kp N6     &kp N7                     &kp N8          &kp N9           &kp N0             &kp EQUAL
-&trans  &kp LWIN            &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp PLUS       &trans     &kp HOME                   &kp UP_ARROW    &kp PAGE_UP      &kp C_VOLUME_UP    &kp RGUI           &mt RGUI F12
-        &kp LEFT_CONTROL    &kp KP_SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp MINUS      &trans     &kp LEFT_ARROW             &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN  &kp RIGHT_CONTROL
-        &mt LEFT_ALT EQUAL  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp DOT        &trans     &kp END                    &trans          &kp PAGE_DOWN    &kp C_MUTE         &kp RIGHT_ALT
-                                          &trans        &trans        &kp LEFT_SHIFT  &lt 3 ENTER    &kp SPACE  &mt RIGHT_SHIFT BACKSPACE  &lt 3 DELETE    &kp PIPE
+        &trans              &trans        &trans        &trans        &trans          &trans         &trans         &trans                     &trans          &trans               &trans             &trans
+&trans  &kp LWIN            &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp PLUS       &kp PAGE_UP    &kp LC(LEFT_ARROW)         &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp C_VOLUME_UP    &kp RGUI           &trans
+        &kp LEFT_CONTROL    &kp KP_SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp MINUS      &kp PAGE_DOWN  &kp LEFT_ARROW             &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp C_VOLUME_DOWN  &kp RIGHT_CONTROL
+        &mt LEFT_ALT EQUAL  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp DOT        &kp HOME       &kp END                    &trans          &trans               &kp C_MUTE         &kp RIGHT_ALT
+                                          &trans        &trans        &kp LEFT_SHIFT  &lt 3 ENTER    &kp SPACE      &mt RIGHT_SHIFT BACKSPACE  &lt 3 DELETE    &kp PIPE
             >;
         };
 
