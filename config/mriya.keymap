@@ -42,7 +42,7 @@
 
         DeleteExcel {
             bindings = <&kp LC(MINUS)>;
-            key-positions = <1 2>;
+            key-positions = <14 15>;
         };
 
         DeleteGoogle {
