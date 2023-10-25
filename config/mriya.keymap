@@ -91,7 +91,7 @@
             label = "TAPDE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LS(RIGHT_BRACKET)>, <&kp BACKSLASH>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp BACKSLASH>;
         };
     };
 
@@ -100,7 +100,7 @@
 
         default_layer {
             bindings = <
-&kp LWIN  &sl 4                   &kp Q  &kp W       &kp E      &kp R       &kp T          &kp Y      &kp U                      &kp I      &kp O     &kp P     &kp LBKT        &TapDe
+&kp LWIN  &kp TILDE               &kp Q  &kp W       &kp E      &kp R       &kp T          &kp Y      &kp U                      &kp I      &kp O     &kp P     &kp LBKT        &TapDe
           &kp LCTRL               &kp A  &kp S       &kp D      &kp F       &kp G          &kp H      &kp J                      &kp K      &kp L     &kp SEMI  &mt RCTRL SQT
           &mt LEFT_ALT BACKSLASH  &kp Z  &kp X       &kp C      &kp V       &kp B          &kp N      &kp M                      &kp COMMA  &kp DOT   &kp FSLH  &mt RALT MINUS
                                          &kp ESCAPE  &lt 2 TAB  &kp LSHIFT  &lt 1 ENTER    &kp SPACE  &mt RIGHT_SHIFT BACKSPACE  &lt 2 DEL  &kp PIPE
@@ -131,15 +131,6 @@
        &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
        &sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
                                   &none         &trans        &none         &trans          &trans        &none         &trans        &none
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&kp LGUI  &trans     &kp GRAVE  &kp K_CALC        &kp LS(LC(UP_ARROW))  &kp DELETE         &kp PAGE_UP      &trans     &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT_ARROW)  &trans  &trans     &trans
-          &kp LCTRL  &trans     &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LC(LS(RIGHT))  &kp PAGE_DOWN    &trans     &kp LEFT      &kp DOWN      &kp RIGHT            &trans  &kp LCTRL
-          &kp LALT   &trans     &trans            &trans                &trans             &trans           &trans     &trans        &trans        &trans               &trans  &kp LALT
-                                &kp ESC           &kp TAB               &kp LSHFT          &kp ENTER        &kp SPACE  &kp BSPC      &trans        &kp BSLH
             >;
         };
     };
