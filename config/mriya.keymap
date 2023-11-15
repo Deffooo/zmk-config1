@@ -14,49 +14,16 @@
 #define ADJ 3
 
 &lt {
-    quick_tap_ms = <190>;
+    quick_tap_ms = <200>;
 };
 
 &mt {
-    quick_tap_ms = <190>;
+    quick_tap_ms = <200>;
 };
 
 / {
     combos {
         compatible = "zmk,combos";
-
-        excel- {
-            bindings = <&kp LC(MINUS)>;
-            key-positions = <1 2>;
-            timeout-ms = <40>;
-        };
-
-        google- {
-            bindings = <&kp LA(LC(MINUS))>;
-            key-positions = <1 0>;
-            timeout-ms = <40>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <4 5>;
-            timeout-ms = <40>;
-        };
-
-        firefox {
-            bindings = <&kp LS(LA(LC(NUMBER_1)))>;
-            key-positions = <15 16 17>;
-        };
-
-        wins {
-            bindings = <&kp LG(S)>;
-            key-positions = <14 15 16>;
-        };
-
-        bufer {
-            bindings = <&kp LG(V)>;
-            key-positions = <29 28 27>;
-        };
     };
 
     macros {
