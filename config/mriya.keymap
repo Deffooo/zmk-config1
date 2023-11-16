@@ -65,11 +65,6 @@
             bindings = <&kp K_CALC>;
             key-positions = <7 8 9>;
         };
-
-        sleep {
-            bindings = <&kp C_SLEEP_MODE>;
-            key-positions = <21 22 23 24>;
-        };
     };
 
     macros {
